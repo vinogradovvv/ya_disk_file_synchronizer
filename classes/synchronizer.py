@@ -9,20 +9,20 @@ class Synchronizer(ABC):
 
     @abstractmethod
     def load(self, path):
-        pass
+        raise NotImplementedError("Method not implemented.")
 
     @abstractmethod
     def reload(self, path):
-        pass
+        raise NotImplementedError("Method not implemented.")
 
     @abstractmethod
     def delete(self, filename):
-        pass
+        raise NotImplementedError("Method not implemented.")
 
     @abstractmethod
     def get_info(self):
-        pass
+        raise NotImplementedError("Method not implemented.")
 
     @abstractmethod
     def create_folder(self, path: Optional[Any] = None):
-        pass
+        raise NotImplementedError("Method not implemented.")

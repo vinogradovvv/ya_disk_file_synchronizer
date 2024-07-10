@@ -15,7 +15,8 @@ def env_check() -> bool:
     local_path = os.getenv("LOCAL_PATH")
     if not local_path or not local_path.endswith("/"):
         sys.exit(
-            "Please fill path to local synchronise folder to the .env file with '/' in the end."
+            "Please fill path to local synchronise folder "
+            "to the .env file with '/' in the end."
         )
 
     if not os.path.exists(os.getenv("LOCAL_PATH")) or (
@@ -26,7 +27,8 @@ def env_check() -> bool:
     remote_path = os.getenv("YA_DISK_PATH")
     if not remote_path:
         sys.exit(
-            "Please fill path to synchronise folder on the yandex disk to the .env file with '/' in the end."
+            "Please fill path to synchronise folder on the yandex disk "
+            "to the .env file with '/' in the end."
         )
     elif not remote_path.endswith("/"):
         sys.exit(
