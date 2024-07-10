@@ -95,6 +95,7 @@ class YandexDiskSynchronizer(Synchronizer):
     def create_folder(self, path: Optional[str] = None) -> requests.Response:
         """
         Creates folder on the yandex disk
+        return: requests.Response
         """
         with requests.session() as session:
             if not path:
